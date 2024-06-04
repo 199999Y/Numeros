@@ -1,0 +1,23 @@
+#Leer dos números enteros
+a = int(input("Ingrese el primer número entero de dos digitos menor de 100: "))
+b = int(input("Ingrese el segundo número entero de dos dijitos menor que el primero: "))
+D = a - b
+
+# Verificar que la diferencia es igual a 4
+if D == 4:
+print(f"Los dígitos de {a} son: ", end="")
+for digit in str(b):
+    print(digit, end=" ")
+print(f"\nLos dígitos de {b} son: ", end="")
+for digit in str(b):
+    print(digit, end=" ")
+condiciones_cumplidas = True
+
+# Verificar que el número sea par  
+elif D % 2 == 0:
+    if a + b:
+      print("La suma de los dos números es " ,a + b, ".")
+      
+# Verificar que el número sea impar
+elif D in (2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97):
+    print("La multiplicación de los dos números es ", a * b, ".")
